@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+<!-- Bootstrap JavaScript (place before closing </body> tag) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>OMA SIVU</title>
+    <style>
+        
+        body { 
+            background-color: rgb(235, 219, 191); 
+            color: rgb(3, 48, 51);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 20px;
+        }
+        h1 { color: rgb(27, 27, 27); }
+
+        .hero-section {
+            background-image: url('teltta.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: scroll;
+            min-height: 60vh; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
+            background-color: rgb(224, 202, 216);
+            padding: 300px 10px;
+            margin-bottom: 10px;
+        }
+
+     .navbar {
+            background-color:rgb(158, 173, 154);
+        }
+
+
+    .custom-card {
+    border: none !important;
+    border-radius: 20px !important;
+    box-shadow: 0 10px 30px rgba(135, 125, 125, 0.05);
+    transition: transform 0.3s ease;
+    background-color: rgb(156, 178, 163);
+}
+
+    .custom-card:hover {
+    transform: translateY(-10px);
+
+
+}
+
+    .icon-circle {
+    width: 60px;
+    height: 60px;
+    background-color: #ccd2c6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+        }
+    
+    
+
+      .transition-button {
+        background-color: rgb(224, 202, 216);
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+      
+
+      .grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+
+
+
+    .responsive-nav .nav-list {
+      display: flex;
+      list-style: none;
+    }
+    
+    @media (max-width: 600px) {
+      .responsive-nav .nav-list {
+        display: none;
+      }
+    
+      .responsive-nav .menu-toggle {
+        display: block;
+      }
+    }
+
+    
+
+
+    .footer {
+        background-color: rgb(106, 133, 98);
+        text-align: center;
+        padding: 10px;
+        margin-top: 20px;
+    }
+    </style>
+
+
+
+</head>
+<body>
+
+    <header>
+        
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">JEMMA </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Etusivu</a></li>
+        <li class="nav-item"><a class="nav-link" href="minusta.html">Minusta</a></li>
+        <li class="nav-item"><a class="nav-link" href="otayhteytta.html">Ota yhteyttä</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<hr>
+
+
+<header class="hero-section text-center">
+    <div class="container">
+        <h1 class="display-4">Camping - Glamping</h1>
+        <p class="lead">Seuraava seikkailusi voi alkaa</p>
+    </div>
+
+    </header>
+    
+
+<header>
+<div class="row g-4 justify-content-center">
+        <div class="col- 12 col-md-6 col-lg-4">    
+    <div class="card h-100 shadow-sm custom-card">
+    <div class="card-body text-center">
+    
+    <div class="icon-circle mb-3">
+        <i class="fa-solid fa-tent fa-2x" style="color: #2d5a27;"></i>  
+    </div>
+      <h5 class="card-title fw-bold">Teltta</h5>
+    <p class="card-text">Tarkemmat tiedot teltasta.</p>
+    <a href="teltta.html" class="btn btn-primary w-100">Lue lisää</a>
+    </div>
+    </div>
+    </div>
+        
+    
+
+    <div class="col- 12 col-md-6 col-lg-4">    
+    <div class="card h-100 shadow-sm custom-card">
+    <div class="card-body text-center">
+    
+    <div class="icon-circle mb-3">
+        <i class="fa-solid fa-map-location fa-2x" style="color: #2d5a27;"></i>  
+    </div>
+      <h5 class="card-title fw-bold">Vinkit leirintäalueelle</h5>
+    <p class="card-text">Parhaimmat vinkit leirintäalueella telttailuun.</p>
+    <a href="vinkit.html" class="btn btn-primary w-100">Lue lisää</a>
+    </div>
+        </div>
+        </div>
+
+   <div class="col- 12 col-md-6 col-lg-4">    
+    <div class="card h-100 shadow-sm custom-card">
+    <div class="card-body text-center">
+    
+    <div class="icon-circle mb-3">
+        <i class="fa-solid fa-image fa-2x" style="color: #2d5a27;"></i>  
+    </div>
+      <h5 class="card-title fw-bold">Galleria</h5>
+    <p class="card-text">Kuvia lomamatkoista teltan kanssa.</p>
+    <a href="galleria.html" class="btn btn-primary w-100">Lue lisää</a>
+    </div>
+    </div>
+        </div>
+    </div>
+
+<section class="py-5">
+    <h2 class="text-center mb-4" style="font-weight: bold; letter-spacing: 2px;">Suosikkipaikat</h2>
+    <div class="row g-4 justify-content-center">
+   
+
+        <!-- Paikka 1 -->
+      
+        <div class="col-6 col-md-3">
+            <div class="card bg-dark text-white border-0">
+                <img src="Powerpark.jpg" class="card-img opacity-50" alt="Huvipuisto Powerpark">
+                <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                    <h5 class="card-title fw-bold">POWERPARK</h5>
+                 
+  
+</div>
+                     
+</div>
+    </div>
+
+   
+
+        
+         <div class="col-6 col-md-3">
+            <div class="card bg-dark text-white border-0">
+                <img src="Arcus.jpg" class="card-img opacity-50" alt="Ranta">
+                <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                    <h5 class="card-title fw-bold">ARCUS</h5>
+                </div>
+            </div>
+        </div>
+
+         <div class="col-6 col-md-3">
+            <div class="card bg-dark text-white border-0">
+                <img src="Luleå.jpg" class="card-img opacity-50" alt="museo">
+                <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                    <h5 class="card-title fw-bold">LULEÅ</h5>
+                    </div>
+            </div>
+        </div>
+
+
+
+            <div class="col-6 col-md-3">
+            <div class="card bg-dark text-white border-0">
+                <img src="Boden.jpg" class="card-img opacity-50" alt="vesipuisto">
+                <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                    <h5 class="card-title fw-bold">BODEN</h5>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </section> 
+
+    
+
+
+</header>
+
+
+
+    </header>
+
+    
+
+
+
+  <footer>
+        <p>&copy; 2024 JEMMA. Kaikki oikeudet pidätetään.</p>
+    </footer>
+
+
+</body>
+</html>
